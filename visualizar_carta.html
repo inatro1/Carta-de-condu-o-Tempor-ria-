@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de Condução Temporária - Pré-visualização</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f2f6fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0078d7;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .viewer-container {
+      width: 100%;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eaf0f6;
+    }
+    iframe {
+      width: 90%;
+      height: 80vh;
+      border: none;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      background: white;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+    button:hover {
+      background-color: #005fa3;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carta de Condução Temporária</h1>
+  </header>
+
+  <div class="viewer-container">
+    <iframe src="Carta%20de%20Condução%20Temporária.pdf" title="Pré-visualização do PDF"></iframe>
+  </div>
+
+  <div class="buttons">
+    <button onclick="window.open('Carta%20de%20Condução%20Temporária.pdf', '_blank')">📄 Baixar PDF</button>
+    <button onclick="print()">🖨️ Imprimir</button>
+  </div>
+
+  <footer>
+    © 2025 - Sistema de Visualização de Documentos
+  </footer>
+</body>
+</html>
